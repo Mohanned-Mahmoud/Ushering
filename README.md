@@ -21,33 +21,32 @@
 - [Executive Overview](#executive-overview)
 - [The Problem It Solves](#the-problem-it-solves)
 - [System Architecture & Ecosystem](#system-architecture--ecosystem)
-- [Key Features & Core Modules](#key-features--core-modules)
-  - [1. Usher Onboarding, National ID & InstaPay Integration](#1-usher-onboarding-national-id--instapay-integration)
-  - [2. Smart Event Staffing, Teams & Waitlists](#2-smart-event-staffing-teams--waitlists)
-  - [3. Geofenced Attendance & Live Selfie Photo Verification](#3-geofenced-attendance--live-selfie-photo-verification)
-  - [4. Dedicated Event Announcements & Live Chat Stream](#4-dedicated-event-announcements--live-chat-stream)
-  - [5. Apparel & Uniform Logistics (Automated Sizes Aggregator)](#5-apparel--uniform-logistics-automated-sizes-aggregator)
-  - [6. Smart Deduction Engine & Lateness Matrix](#6-smart-deduction-engine--lateness-matrix)
-  - [7. Usher Suspension Engine & Disciplinary Countdown](#7-usher-suspension-engine--disciplinary-countdown)
-  - [8. Executive Financial Suite & Branded Excel Payroll Export](#8-executive-financial-suite--branded-excel-payroll-export)
-  - [9. High-Definition Printable Ushers Sheet (PDF)](#9-high-definition-printable-ushers-sheet-pdf)
-  - [10. Intelligent Bilingual Venue Mapping & Geofencing](#10-intelligent-bilingual-venue-mapping--geofencing)
-  - [11. Automated Rating & Punctuality Scoring Engine](#11-automated-rating--punctuality-scoring-engine)
-  - [12. Live Admin Command Center & Immutable Audit Log](#12-live-admin-command-center--immutable-audit-log)
-- [End-to-End User Journeys](#end-to-end-user-journeys)
-  - [The Usher's Experience](#the-ushers-experience)
-  - [The Event Organizer's Workflow](#the-event-organizers-workflow)
-- [Visual Assets & High-Resolution Screenshot Guide](#visual-assets--high-resolution-screenshot-guide)
-  - [Optimizing Tall & High-Resolution Screenshots](#optimizing-tall--high-resolution-screenshots)
-  - [Recommended Assets Index](#recommended-assets-index)
-- [Branding & Design System](#branding--design-system)
+- [📱 The Usher Mobile Experience (PWA)](#-the-usher-mobile-experience-pwa)
+  - [1. Mobile Dashboard & Field Profile](#1-mobile-dashboard--field-profile)
+  - [2. Shift Discovery, Application & Completion Flow](#2-shift-discovery-application--completion-flow)
+  - [3. Real-Time Alerts, Check-in & Earnings Ledger](#3-real-time-alerts-check-in--earnings-ledger)
+- [💻 The Admin Operations Command Center](#-the-admin-operations-command-center)
+  - [1. Live Command Dashboard & Key Metrics](#1-live-command-dashboard--key-metrics)
+  - [2. Event Creation & Intelligent Venue Geofencing](#2-event-creation--intelligent-venue-geofencing)
+  - [3. Multi-Day Event Overview & Schedule Configuration](#3-multi-day-event-overview--schedule-configuration)
+  - [4. Operational Teams, Staff Allocation & Applicant Filters](#4-operational-teams-staff-allocation--applicant-filters)
+  - [5. Dual-Factor Attendance Audit & Live Selfie Verification](#5-dual-factor-attendance-audit--live-selfie-verification)
+  - [6. Real-Time Event Announcements & Broadcast Streams](#6-real-time-event-announcements--broadcast-streams)
+  - [7. Apparel & Uniform Logistics (Automated Sizes Summary)](#7-apparel--uniform-logistics-automated-sizes-summary)
+  - [8. Smart Deduction Engine & Lateness Matrix](#8-smart-deduction-engine--lateness-matrix)
+  - [9. Disciplinary Suspension Engine & Quick-Select Presets](#9-disciplinary-suspension-engine--quick-select-presets)
+  - [10. Executive Financial Suite & Branded Excel Payroll Export](#10-executive-financial-suite--branded-excel-payroll-export)
+  - [11. Printable Event Ushers Sheet (High-Resolution PDF)](#11-printable-event-ushers-sheet-high-resolution-pdf)
+  - [12. Immutable System Audit Log](#12-immutable-system-audit-log)
+- [End-to-End Operational Workflows](#end-to-end-operational-workflows)
+- [Branding & Visual Philosophy](#branding--visual-philosophy)
 
 ---
 
 ## Executive Overview
-**INSIDERS** is a full-scale event staffing and crowd operations platform built for premier event agencies, production houses, and staffing organizations. 
+**INSIDERS** is an enterprise-grade crowd operations and event staffing management system built for premier event agencies, production houses, and staffing organizations. 
 
-Managing hundreds of ushers, supervisors, and guest-experience personnel across multi-day conferences, exhibitions, concerts, and VIP galas requires rigorous coordination. INSIDERS replaces chaotic WhatsApp groups, untracked spreadsheets, and paper sign-in sheets with an automated, synchronized digital command system.
+Coordinating hundreds of ushers, supervisors, and guest-experience personnel across multi-day conferences, exhibitions, sports championships, and VIP galas requires rigorous coordination. INSIDERS replaces chaotic WhatsApp groups, untracked spreadsheets, and paper sign-in sheets with an automated, synchronized digital command system.
 
 ---
 
@@ -91,124 +90,339 @@ INSIDERS consists of three deeply integrated applications running on top of a un
 
 ---
 
-## Key Features & Core Modules
+## 📱 The Usher Mobile Experience (PWA)
 
-### 1. Usher Onboarding, National ID & InstaPay Integration
-Ushers onboard through a structured registration pipeline. Applicants submit:
-- Personal details, spoken languages, and physical attributes (height, age, experience).
-- Professional headshot and front/back National ID documents.
-- **InstaPay Integration:** Automatic extraction and validation of Egyptian InstaPay handles/payment links for zero-friction electronic payouts.
-- Account approval queue where administrators inspect submitted credentials before granting platform access.
+The Usher Mobile PWA is the on-ground companion for event staff. Designed with a clean, high-contrast aesthetic and responsive touch ergonomics, it gives ushers immediate control over their shifts, earnings, notifications, and profile.
+
+> [!TIP]
+> **Crystal-Clear Quality:** Click any mobile screenshot below to inspect the original uncompressed high-resolution view.
+
+### 1. Mobile Dashboard & Field Profile
+- **Home Dashboard:** Displays real-time digital wallet balance (e.g. `EGP 50,800`), the usher's **Floor Score** rating (e.g. `3.1 / 5.0`), quick shortcuts to *My Events*, *Transactions*, and *Ratings*, alongside upcoming assignments.
+- **My Events Hub:** Organizes shifts across 6 dedicated status tabs: `OPEN`, `PENDING`, `ACCEPTED`, `COMPLETED`, `PAST/CANCEL`, and `REJECTED`, complete with map navigation and **RULES APPLY** badges.
+- **Field Profile & Sizing:** Complete profile showcasing spoken languages (English, Spanish), exact apparel measurements (T-Shirt, Shirt, Pants 28–44, Shorts, Shoes 36–46), skills, unavailable calendar times, and payout history.
+
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th align="center">🏠 Home & Floor Score</th>
+        <th align="center">📅 Shifts & Status Tabs</th>
+        <th align="center">👤 Field Profile & Sizing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center" width="33%">
+          <a href="./readme-assets/home-usher.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/home-usher.jpg" alt="Usher Home Dashboard" width="240" />
+          </a>
+        </td>
+        <td align="center" width="33%">
+          <a href="./readme-assets/my-events-usher.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/my-events-usher.jpg" alt="Usher Shifts and Call Times" width="240" />
+          </a>
+        </td>
+        <td align="center" width="33%">
+          <a href="./readme-assets/my-profile.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/my-profile.jpg" alt="Usher Field Profile and Sizes" width="240" />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><sub>Live wallet balance, ratings & upcoming call times</sub></td>
+        <td align="center"><sub>Filtered shift pipeline with location maps & rule badges</sub></td>
+        <td align="center"><sub>Uniform sizing (Pants 32, Shoes 44), languages & traits</sub></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+### 2. Shift Discovery, Application & Completion Flow
+- **Apply to Event:** Ushers browse open opportunities, review call times, hourly or daily rates, venue location, and tap **APPLY TO EVENT**.
+- **Application Pending:** Transparent queue display informing the usher that their application is under review by event coordinators, with the option to withdraw.
+- **Assignment Completed:** Post-event confirmation celebrating shift completion, automatically calculating punctuality ratings and transferring earnings to the digital wallet.
+
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th align="center">📥 Open for Applications</th>
+        <th align="center">⏳ Application Pending</th>
+        <th align="center">✅ Assignment Completed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center" width="33%">
+          <a href="./readme-assets/apply-to-event-usher.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/apply-to-event-usher.jpg" alt="Apply to Event" width="240" />
+          </a>
+        </td>
+        <td align="center" width="33%">
+          <a href="./readme-assets/application-pending-usher.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/application-pending-usher.jpg" alt="Application Pending Review" width="240" />
+          </a>
+        </td>
+        <td align="center" width="33%">
+          <a href="./readme-assets/event-done-usher.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/event-done-usher.jpg" alt="Assignment Completed" width="240" />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><sub>Venue coordinates & 1-tap application trigger</sub></td>
+        <td align="center"><sub>Real-time review status with withdraw option</sub></td>
+        <td align="center"><sub>Shift wrap-up with automated punctuality feedback</sub></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+### 3. Real-Time Alerts, Check-in & Earnings Ledger
+- **Alerts Feed:** Consolidated notifications for admin chat announcements, direct shift assignments, onboarding approvals, and policy updates.
+- **Alert Detail Modal:** Rich dialog offering granular shift assignment specifics before accepting or confirming attendance.
+- **Earnings & Payout Requests:** Digital wallet ledger itemizing completed event earnings (e.g. `+EGP 250.00`) and a 1-tap **REQUEST PAYOUT** trigger.
+- **GPS Check-in:** Geofence verification requiring staff to be within physical venue boundaries before shift commencement.
+
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th align="center">🔔 In-App Alerts Feed</th>
+        <th align="center">📋 Alert Details Dialog</th>
+        <th align="center">💰 Balance & Ledger</th>
+        <th align="center">📍 GPS Check-in</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center" width="25%">
+          <a href="./readme-assets/alerts-tab-usher.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/alerts-tab-usher.jpg" alt="In-App Alerts" width="220" />
+          </a>
+        </td>
+        <td align="center" width="25%">
+          <a href="./readme-assets/message-opend.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/message-opend.jpg" alt="Alert Details" width="220" />
+          </a>
+        </td>
+        <td align="center" width="25%">
+          <a href="./readme-assets/balance-usher.jpg" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/balance-usher.jpg" alt="Balance and Earnings" width="220" />
+          </a>
+        </td>
+        <td align="center" width="25%">
+          <a href="./readme-assets/checkin-screen.png" target="_blank" title="Click to view full uncompressed resolution">
+            <img src="./readme-assets/checkin-screen.png" alt="GPS Check-in Screen" width="220" />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><sub>Consolidated push stream</sub></td>
+        <td align="center"><sub>Event assignment details</sub></td>
+        <td align="center"><sub>Transparent transaction credits</sub></td>
+        <td align="center"><sub>Geofenced verification</sub></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+## 💻 The Admin Operations Command Center
+
+The Admin Operations Hub is the desktop-ready control center for event directors, floor coordinators, and finance managers.
+
+### 1. Live Command Dashboard & Key Metrics
+High-level overview displaying active events, confirmed staff count, check-in completion percentages, 6-month event trends (Total vs. Completed), and platform health indicators.
+
+<div align="center">
+  <a href="./readme-assets/admin-dashboard.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/admin-dashboard.png" alt="Admin Command Dashboard" width="850" />
+  </a>
+</div>
+
+---
+
+### 2. Event Creation & Intelligent Venue Geofencing
+Creating an event integrates high-precision mapping and logistical parameters:
+- **LocationIQ Autocomplete & Popular Venues:** Search venues across Egypt or pick from popular locations (*Cairo International Convention Centre, El Gouna Arena, EIEC, The Grand Egyptian Museum, New Capital Sports City*).
+- **Interactive Leaflet Map & Range Presets:** Draggable pins with live geofence radius presets (*50m, 100m, 150m, 250m, 500m, 1000m*).
+- **Arrival Windows:** Configure early arrival allowance (*e.g., Check-in opens 5 minutes before call time*).
+
+<div align="center">
+  <a href="./readme-assets/new-event1.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/new-event1.png" alt="Create Event - Venue and Geofencing" width="850" />
+  </a>
+</div>
+
+---
+
+### 3. Multi-Day Event Overview & Schedule Configuration
+Full configuration of multi-day shift logistics, compensation tiers, and attire guidelines:
+- **Schedule:** Independent Start and End dates and times supporting single-day and multi-day operations.
+- **Rate Differentiation:** Distinct pay scales for **Team Leads** (e.g. `EGP 1,100/day`) versus **Regular Ushers** (e.g. `EGP 1,000/day`), automatically calculating cumulative multi-day totals (`EGP 1,100 × 7 = EGP 7,700`).
+- **Dress Code & Instructions:** Granular uniform instructions (e.g. *"Black Suit, White shirt, Black Shoes (No Tuxedos, No Oversized Pants)"*).
+- **Real-Time Attendance Overview:** Instant headcount cards for Assigned Staff, Checked In, Pending Applicants, and Late / No-Show counts.
+
+<div align="center">
+  <a href="./readme-assets/new-event2.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/new-event2.png" alt="Event Creation - Schedule and Requirements" width="850" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <a href="./readme-assets/event-overview.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/event-overview.png" alt="Event Details Overview Tab" width="850" />
+  </a>
+</div>
+
+---
+
+### 4. Operational Teams, Staff Allocation & Applicant Filters
+Complex events require multi-zone team structuring and fine-grained applicant screening:
+- **Zoned Teams:** Organize personnel by location or operational responsibility (e.g. *Cairo Airport*, *Alamein Venue*, *VIP Stage*).
+- **Staff Roster Actions:** Real-time visibility into assigned staff with one-click actions: **RATE**, **DEDUCT**, and **REMOVE**.
+- **Smart Applicant Filtering:** Filter pending applicants by *Gender*, *Language*, *Minimum Rating*, *Height (cm)*, *Dress Size*, and *Shoe Size*.
+
+<div align="center">
+  <a href="./readme-assets/all-events.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/all-events.png" alt="All Events List" width="850" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <a href="./readme-assets/event-staff-and-teams.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/event-staff-and-teams.png" alt="Event Staff and Teams Tab" width="850" />
+  </a>
+</div>
+
+<br/>
 
 <div align="center">
   <a href="./readme-assets/account-approval.png" target="_blank" title="Click to view full-resolution screenshot">
-    <img src="./readme-assets/account-approval.png" alt="Account Approval Screen" width="750" />
+    <img src="./readme-assets/account-approval.png" alt="Account Approval Queue" width="750" />
   </a>
 </div>
 
 ---
 
-### 2. Smart Event Staffing, Teams & Waitlists
-Event managers can schedule single-day or multi-day events with fine-grained staffing controls:
-- **Team Structuring:** Organize ushers into operational teams (e.g., VIP Protocol, Main Stage, Gate Registration, Media Logistics).
-- **Leadership Roles:** Designate Team Leads with higher daily rates and supervisory responsibilities.
-- **Multi-Day Compensation:** Automated calculation of working days and total earnings preview (`dailyRate × workingDays`).
-- **Smart Filtering:** Filter the entire database by gender, height, language proficiency, rating, and governorate.
-- **Instant Allocation & Waitlists:** One-click assignment with push notification invites. Ushers can accept or decline, with immediate waitlist replacements.
+### 5. Dual-Factor Attendance Audit & Live Selfie Verification
+Eliminates fraudulent attendance through verifiable biometric and spatial proofs:
+- **Check-in Details Modal:** Inspect any assigned staff member's exact check-in and checkout timestamps, late arrival duration (e.g. `0 mins`), and early leave status.
+- **Selfie / Proof Verification:** View the high-resolution live selfie taken by the usher at the moment of check-in, verifying their physical presence, location, and proper dress code compliance.
 
 <div align="center">
-  <a href="./readme-assets/event-assignment.png" target="_blank" title="Click to view full-resolution screenshot">
-    <img src="./readme-assets/event-assignment.png" alt="Event Assignment Screen" width="750" />
+  <a href="./readme-assets/checkin-details-modal.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/checkin-details-modal.png" alt="Check-in Details Modal with Selfie Verification" width="750" />
   </a>
 </div>
 
 ---
 
-### 3. Geofenced Attendance & Live Selfie Photo Verification
-To eliminate fraudulent attendance, INSIDERS enforces dual-factor check-in:
-- **GPS Geofence Radius:** The app verifies the usher's precise GPS coordinates against the event venue coordinates (e.g., within 300–500m). Check-in remains disabled outside the radius.
-- **Live Selfie Photo:** Ushers must take and submit a live photo in uniform upon arrival.
-- **Admin Check-in Details Modal:** Admins can click any checked-in usher to view their arrival timestamp, exact minutes late (if any), GPS location accuracy, and submitted selfie photo.
+### 6. Real-Time Event Announcements & Broadcast Streams
+Dedicated communication feeds that keep coordinators and on-ground personnel synchronized:
+- **Event Announcements:** Broadcast shift updates, gate changes, and security protocols directly to all assigned staff for a specific event.
+- **FCM Push Notifications:** Urgent announcements trigger instant lock-screen push alerts on ushers' mobile devices.
 
 <div align="center">
-  <a href="./readme-assets/checkin-screen.png" target="_blank" title="Click to view full-resolution screenshot">
-    <img src="./readme-assets/checkin-screen.png" alt="Check-in Screen" width="340" />
+  <a href="./readme-assets/event-chat.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/event-chat.png" alt="Event Announcements Modal" width="750" />
   </a>
-  <p><sub>📱 Mobile View: Click image to expand in full native resolution</sub></p>
 </div>
 
----
-
-### 4. Dedicated Event Announcements & Live Chat Stream
-Smooth operations depend on real-time field communication:
-- **In-Event Chat Stream:** Each event has an interactive channel where admins can publish announcements, gate assignments, and schedule modifications.
-- **Push Notification Integration:** Urgent messages trigger native mobile push notifications to all assigned ushers via Firebase Cloud Messaging.
-- **Mobile-Optimized Viewer:** Clean, responsive chat interface designed specifically for ushers on the move.
+<br/>
 
 <div align="center">
   <a href="./readme-assets/broadcasts-screen.png" target="_blank" title="Click to view full-resolution screenshot">
-    <img src="./readme-assets/broadcasts-screen.png" alt="Event Chat and Broadcasts" width="750" />
+    <img src="./readme-assets/broadcasts-screen.png" alt="System Broadcasts Screen" width="750" />
   </a>
 </div>
 
 ---
 
-### 5. Apparel & Uniform Logistics (Automated Sizes Aggregator)
-Uniform distribution is one of the most tedious aspects of event preparation. INSIDERS automates the entire supply chain:
-- **Comprehensive Size Profiles:** Ushers maintain clothing measurements in their profile (T-Shirt/Top, Jacket, Pants with numerical sizing 28–44, and Shoe sizes).
-- **Real-Time Sizes Summary:** The event details page aggregates the uniform requirements of all assigned staff into an instant tally.
-- **Roster Export Integration:** The uniform breakdown is automatically embedded into exported PDF sheets for warehouse and wardrobe teams.
+### 7. Apparel & Uniform Logistics (Automated Sizes Summary)
+Uniform distribution is automated directly from usher profile data:
+- **Sizes Summary Card:** The event overview automatically calculates the total aggregate uniform requirements of all assigned ushers (e.g. *T-Shirts: M (1), Shirts: M (1), Pants: 38 (1), Shorts: 38 (1), Shoes: 44 (1)*).
+- **Roster Export Integration:** Sizing tallies are embedded into exported PDF sheets for immediate distribution by wardrobe and warehouse teams.
 
 ---
 
-### 6. Smart Deduction Engine & Lateness Matrix
+### 8. Smart Deduction Engine & Lateness Matrix
 Admins have granular control over punctuality and attendance policies:
-- **Configurable Deduction Rules:** Set specific grace periods and monetary deductions per event (e.g., 15–30 mins late = EGP 50 deduction, 30–60 mins late = EGP 100 deduction).
-- **Upfront Policy Transparency:** Deduction rules appear as highlighted warning badges on event cards in the Ushers App before staff confirm attendance.
-- **Automated Execution:** Deductions are automatically calculated at checkout and reflected in financial sheets without manual math.
+- **Configurable Rules:** Define flat or progressive penalties (e.g. `-50 EGP` flat late deduction applied automatically at checkout).
+- **Rule Triggers:** Set condition triggers (*Always Apply*, *Lateness Grace Period*, *Dress Code Infraction*).
+- **Total Deduction Banner:** Live banner tracking total deductions applied across all ushers in the shift.
+
+<div align="center">
+  <a href="./readme-assets/deduction-rules.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/deduction-rules.png" alt="Deduction Rules Tab" width="850" />
+  </a>
+</div>
 
 ---
 
-### 7. Usher Suspension Engine & Disciplinary Countdown
-Reliability is reinforced through a multi-tiered disciplinary system:
-- **Preset & Custom Suspension Durations:** Admins can suspend unreliable staff for preset durations (3 days, 7 days, 14 days, 30 days) or select a custom date.
-- **Automated Default Sanctions:** The platform supports default penalty suspension days for severe violations or no-shows.
-- **Live Suspension Countdown:** Suspended ushers see a dedicated suspension screen in their mobile app with an active countdown timer.
-- **Automatic Shift Revocation:** Suspending an usher automatically revokes their upcoming event assignments and frees slots for waitlisted staff.
+### 9. Disciplinary Suspension Engine & Quick-Select Presets
+Enforces reliability with automated and manual suspension options:
+- **Quick-Select Presets:** Suspend unreliable staff with 1-click presets: **1 Week**, **2 Weeks**, **1 Month**, **3 Months**, **6 Months**, or **1 Year**.
+- **Custom Date Picker:** Set custom suspension expiration dates and times.
+- **Automated Revocation:** Suspending an usher automatically cancels all their upcoming event assignments and restricts them from applying to new shifts.
+
+<div align="center">
+  <a href="./readme-assets/suspension-dialog.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/suspension-dialog.png" alt="Change Suspension Duration Modal" width="700" />
+  </a>
+</div>
 
 ---
 
-### 8. Executive Financial Suite & Branded Excel Payroll Export
-Seamless financial oversight with one-click payroll generation:
-- **Digital Wallets:** Every completed shift credits the usher's ledger (net of deductions and bonuses).
-- **Executive Excel Export (ExcelJS):** Generates a formatted, publication-ready Excel spreadsheet styled in the Insiders Navy & Teal brand palette.
-- **Attendance Whitelisting:** Automatically filters out cancelled, declined, or no-show applicants, including only ushers who actually checked in.
-- **Payroll Breakdown:** Distinguishes supervisors from regular ushers, calculates total working days, gross pay, deductions, net totals, and embeds clickable InstaPay links for batch disbursements.
+### 10. Executive Financial Suite & Branded Excel Payroll Export
+Seamless financial oversight with one-click publication-ready payroll sheets:
+- **Insiders Branded Excel Sheet:** Generated via ExcelJS with Navy (`#00003087`) and Teal (`#0070C0`) styling matching the brand manual.
+- **Section Separation:** Automatically divides staff into **Supervisors** and **Ushers**, computing days worked, daily rate, deductions, subtotals, and net totals.
+- **InstaPay Integration:** Embeds direct InstaPay links for rapid digital batch transfers.
+
+<div align="center">
+  <a href="./readme-assets/salary-sheet-excel.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/salary-sheet-excel.png" alt="Excel Salary Sheet Export" width="820" />
+  </a>
+</div>
 
 ---
 
-### 9. High-Definition Printable Ushers Sheet (PDF)
-A dedicated on-site operational sheet generated dynamically:
-- **Enlarged High-Clarity Photos:** Enlarged usher portraits for quick visual identification at security checkpoints and supervisor desks.
-- **Operational Data:** Full name, assigned operational role/team, and dedicated signature/notes column for physical roll calls.
-- **Uniform Sizes Matrix:** Embedded summary of all clothing sizes on the subsequent page for equipment handover.
-- **Print & Mobile Friendly:** Rendered using high-DPI HTML canvas and jsPDF with Arabic typography support.
+### 11. Printable Event Ushers Sheet (High-Resolution PDF)
+High-fidelity on-ground attendance roster generated dynamically:
+- **Enlarged High-Clarity Photos:** High-resolution portrait photos (`144px × 144px`) rendered with 2.5× DPI canvas export for razor-sharp physical identification.
+- **Operational Data:** Full name, operational team (*Cairo Airport*, *Alamein Venue*), role (*Team Lead*, *Regular*), and a blank signature/notes column for physical check-in.
+- **Sizes Summary:** Embedded breakdown of all uniform sizes on the roster sheet.
+
+<div align="center">
+  <a href="./readme-assets/ushers-sheet-pdf.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/ushers-sheet-pdf.png" alt="Printable Ushers Sheet PDF Roster" width="600" />
+  </a>
+</div>
 
 ---
 
-### 10. Intelligent Bilingual Venue Mapping & Geofencing
-Pinpoint venue setup powered by an integrated mapping engine:
-- **LocationIQ Integration:** Instant autocomplete search supporting English and Arabic venue names across Egypt and the Middle East.
-- **Custom Saved Places:** Admins can bookmark frequent venues (halls, stadiums, exhibition centres) with pre-calibrated coordinates and radii.
-- **Interactive Leaflet Map:** Draggable pins, dynamic radius circles, and real-time geofence visualization.
+### 12. Immutable System Audit Log
+Every critical administrative action—application approval, salary adjustment, manual check-in override, or suspension—is logged with immutable timestamps, admin identities, and action parameters.
 
----
+<div align="center">
+  <a href="./readme-assets/audit-log.png" target="_blank" title="Click to view full-resolution screenshot">
+    <img src="./readme-assets/audit-log.png" alt="Audit Log Screen" width="850" />
+  </a>
+</div>
 
-### 11. Automated Rating & Punctuality Scoring Engine
-A continuous feedback loop that rewards top performers:
-- **Auto-Rating Algorithm:** Computes an objective punctuality score based on exact check-in minutes relative to call time.
-- **Admin & Client Reviews:** Manual reviews combined with the auto-score to form a 5-star weighted rating.
-- **Merit-Based Allocation:** High-rated ushers are prioritized in search results and automated invitations.
+<br/>
 
 <div align="center">
   <a href="./readme-assets/ratings-feedback.png" target="_blank" title="Click to view full-resolution screenshot">
@@ -218,28 +432,7 @@ A continuous feedback loop that rewards top performers:
 
 ---
 
-### 12. Live Admin Command Center & Immutable Audit Log
-Complete operational transparency for executive teams:
-- **Live Command Dashboard:** High-level metrics tracking active events, confirmed staff, check-in completion rates, and budget utilization.
-- **Immutable Audit Trail:** Every critical management action—application approval, salary adjustment, manual check-in override, or suspension—is logged with admin timestamps and IP origins.
-
-<div align="center">
-  <a href="./readme-assets/admin-dashboard.png" target="_blank" title="Click to view full-resolution screenshot">
-    <img src="./readme-assets/admin-dashboard.png" alt="Admin Command Dashboard" width="820" />
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="./readme-assets/audit-log.png" target="_blank" title="Click to view full-resolution screenshot">
-    <img src="./readme-assets/audit-log.png" alt="Audit Log Screen" width="820" />
-  </a>
-</div>
-
----
-
-## End-to-End User Journeys
+## End-to-End Operational Workflows
 
 ### The Usher's Experience
 ```mermaid
@@ -254,7 +447,7 @@ sequenceDiagram
     API->>Admin: Queued in Admin Approvals
     Admin->>API: Approves application
     Admin->>API: Assigns usher to upcoming event (with team & daily rate)
-    API->>App: Push Notification: "You have been assigned to Tech Summit"
+    API->>App: Push Notification: "You have been assigned to event"
     U->>App: Reviews schedule, venue map & deduction rules → Confirms
     Note over U,App: Event Day at Venue
     U->>App: Arrives on-site → Takes live selfie → Taps Check In
@@ -288,42 +481,7 @@ sequenceDiagram
 
 ---
 
-## Visual Assets & High-Resolution Screenshot Guide
-
-### Optimizing Tall & High-Resolution Screenshots
-
-When capturing tall (portrait/vertical 9:16 mobile) screenshots or full-height dashboard scrolls, follow these rules to maintain **100% original visual fidelity**:
-
-1. **Lossless Format (PNG Only):** Always save screenshots in **PNG format** (`.png`). Never save as `.jpg` or `.jpeg` (JPEG produces color banding, fuzzy text, and compression noise on dark UI).
-2. **Native Retina Resolution:**
-   - **For Mobile Screens:** Capture at your device's native resolution (e.g. 1080×2400 or 1170×2532). When placed in the README with `width="320"` to `width="360"`, the image renders at crisp **3× Retina pixel density**.
-   - **For Desktop Dashboards:** Capture at 1920×1080 or higher (DPR 2×).
-3. **Prevent Transfer Compression:** When transferring screenshots from your phone to PC, **do not use WhatsApp or Facebook Messenger** (they compress images by 70%+). Use **Telegram (Send as File/Uncompressed)**, Google Drive, AirDrop, or a direct USB cable.
-4. **Click-to-Expand Full Quality:** Every screenshot in this README is wrapped in an anchor link (`<a href="./readme-assets/...png" target="_blank">`). Clicking any screenshot on GitHub opens the unscaled, 100% raw high-resolution image in full quality.
-
----
-
-### Recommended Assets Index
-
-| # | Feature / Screenshot Name | Application & Route | What to Capture | Target Filename | Recommended Width |
-|---|:---|:---|:---|:---|:---:|
-| **1** | **Admin Command Dashboard** | Admin Hub (`/dashboard`) | High-level metrics, active events, staff attendance stats, and quick actions. | `admin-dashboard.png` | `820px` (Wide) |
-| **2** | **Event Details & Attendance** | Admin Hub (`/events/:id`) | Event header, team assignments, check-in badges, and action buttons. | `event-details.png` | `820px` (Wide) |
-| **3** | **Check-in Verification Modal** | Admin Hub (`/events/:id` → Click Usher) | Modal showing arrival time, late minutes, GPS accuracy, and live selfie photo. | `checkin-details-modal.png` | `550px` (Modal) |
-| **4** | **Event Announcements & Chat** | Admin Hub (`/events/:id` tab) or PWA | Dedicated event chat stream with announcements and messages. | `event-chat.png` | `750px` (Desktop) / `340px` (Mobile) |
-| **5** | **Uniform Sizes Aggregator** | Admin Hub (`/events/:id`) | The "Sizes Summary" card displaying aggregated T-shirt, pants, and shoe counts. | `sizes-summary.png` | `600px` (Card) |
-| **6** | **Deduction Rules Tab** | Admin Hub (`/events/:id` → Deductions) | Multi-tier lateness and absence deduction rules configuration table. | `deduction-rules.png` | `750px` (Table) |
-| **7** | **Usher Suspension Dialog** | Admin Hub (`/ushers/:id` → Suspend) | Suspension modal with preset buttons (3d, 7d, 14d, 30d, custom date picker). | `suspension-dialog.png` | `500px` (Modal) |
-| **8** | **Printable Ushers Sheet (PDF)** | Exported PDF Preview | Rendered PDF showing enlarged usher photos, teams, signature lines, and sizes. | `ushers-sheet-pdf.png` | `750px` (Document) |
-| **9** | **Branded Excel Salary Sheet** | Microsoft Excel Preview | Navy & Teal styled Excel sheet showing supervisors, rates, deductions, and InstaPay links. | `salary-sheet-excel.png` | `820px` (Spreadsheet) |
-| **10** | **Venue Geofencing & Map** | Admin Hub (`/events/new`) | Leaflet map with LocationIQ search, draggable pin, and geofence radius circle. | `map-geofence.png` | `750px` (Map) |
-| **11** | **Usher Profile & Apparel** | Ushers App (`/profile`) | Profile view with clothing sizes (T-Shirt, Pants 28-44, Shoes) and InstaPay handle. | `usher-profile-sizes.png` | `340px` (Tall Mobile) |
-| **12** | **Mobile Check-in & Selfie** | Ushers App (`/events/:id`) | Check-in view with live GPS status button and selfie camera capture. | `usher-checkin-selfie.png` | `340px` (Tall Mobile) |
-| **13** | **Suspended Usher View** | Ushers App (`/events`) | Dedicated suspension alert screen showing the live countdown timer. | `usher-suspension-timer.png` | `340px` (Tall Mobile) |
-
----
-
-## Branding & Design System
+## Branding & Visual Philosophy
 
 INSIDERS follows a visual philosophy of **Authority, Professionalism, and Clean Elegance**:
 - **Monochrome & Deep Navy Canvas:** Sleek high-contrast dark interface accented with Navy (`#00003087`) and Electric Teal (`#0070C0`).

@@ -562,7 +562,7 @@ export default function EventDetails() {
       const { jsPDF } = await import('jspdf');
 
       // html-to-image works natively with oklch and modern CSS
-      const dataUrl = await toPng(element, { quality: 0.98, pixelRatio: 2 });
+      const dataUrl = await toPng(element, { quality: 1, pixelRatio: 2.5 });
       
       const pdf = new jsPDF({
         orientation: 'portrait',
@@ -2199,7 +2199,7 @@ export default function EventDetails() {
           <table className="w-full border-collapse border border-gray-300 text-sm mb-8" style={{ tableLayout: 'fixed' }}>
             <thead>
               <tr className="bg-slate-800 text-white">
-                <th className="p-2 border border-gray-300 w-28">Photo</th>
+                <th className="p-2 border border-gray-300 w-44">Photo</th>
                 <th className="p-2 border border-gray-300 text-left">Name</th>
                 <th className="p-2 border border-gray-300 text-left">Role/Team</th>
                 <th className="p-2 border border-gray-300 text-left">Signature / Notes</th>
@@ -2216,9 +2216,9 @@ export default function EventDetails() {
                   <tr key={assignment.id} className="border-b border-gray-300" style={{ pageBreakInside: 'avoid' }}>
                     <td className="p-2 border border-gray-300 text-center align-middle">
                       {photoUrl ? (
-                        <img src={photoUrl} className="w-20 h-20 rounded-full object-cover mx-auto" crossOrigin="anonymous" alt="Photo" />
+                        <img src={photoUrl} className="w-36 h-36 rounded-2xl object-cover object-top mx-auto shadow-sm" crossOrigin="anonymous" alt="Photo" />
                       ) : (
-                        <div className="w-20 h-20 rounded-full bg-gray-200 mx-auto" />
+                        <div className="w-36 h-36 rounded-2xl bg-gray-200 mx-auto" />
                       )}
                     </td>
                     <td className="p-2 border border-gray-300 align-middle" dir="auto">{usher?.fullName || 'N/A'}</td>
