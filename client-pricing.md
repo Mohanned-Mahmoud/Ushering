@@ -9,11 +9,11 @@ A straightforward, business-friendly breakdown of monthly operating costs for th
 The platform runs on an optimized, modern cloud architecture (**Vercel + Neon Database + Cloudflare R2 + Google Firebase + Custom Domain**). 
 There are **no hidden per-user licensing fees**. All estimates below **include hosting, database, storage, push alerts, custom domain name, and permanent data archiving (old records are NEVER deleted)**.
 
-| Business Scale | Active Staff (Ushers) | Monthly Events | Messages & Reminders | What's Included (Hosting + DB + Domain + Archiving) | Total All-Inclusive Monthly Cost |
-| :--- | :---: | :---: | :---: | :--- | :---: |
-| **🟢 Tier 1: Starter** | Up to **500** Ushers | 5 – 15 Events | Up to 15,000 | • Vercel Hosting ($0)<br>• Neon Database ($0)<br>• Cloudflare R2 Storage ($0)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo)<br>• Lifetime Data Retention ($0) | **~$1 / month**<br>*(Only ~$12 / year total!)* |
-| **🟡 Tier 2: Growth** | Up to **2,000** Ushers | 20 – 50 Events | Up to 60,000 | • Neon Database Pro ($19/mo)<br>• Vercel Hosting Pro ($0–$20/mo)<br>• Cloudflare R2 Storage (~$0.50/mo)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo)<br>• Lifetime Data Retention (Included) | **$21 – $41 / month**<br>*(~1,050 – 2,050 EGP)* |
-| **🔴 Tier 3: Enterprise** | Up to **10,000+** Ushers | 100+ Events | 200,000+ | • Neon Database Scale ($45–$65/mo)<br>• Vercel Hosting Pro ($20–$40/mo)<br>• Cloudflare R2 Storage (~$1–$2/mo)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo)<br>• Lifetime Data Retention (Included) | **$71 – $96 / month**<br>*(~3,550 – 4,800 EGP)* |
+| Business Scale | Active Staff (Ushers) | Monthly Events | Messages & Reminders | Total All-Inclusive Monthly Cost |
+| :--- | :---: | :---: | :---: | :---: |
+| **🟢 Tier 1: Starter** | Up to **500** Ushers | 5 – 15 Events | Up to 15,000 | **~$1 / month**<br>*(Only ~$12 / year total!)* |
+| **🟡 Tier 2: Growth** | Up to **2,000** Ushers | 20 – 50 Events | Up to 60,000 | **$21 – $41 / month**<br>*(~1,050 – 2,050 EGP)* |
+| **🔴 Tier 3: Enterprise** | Up to **10,000+** Ushers | 100+ Events | 200,000+ | **$71 – $96 / month**<br>*(~3,550 – 4,800 EGP)* |
 
 *All tiers include unlimited admin seats, real-time QR check-in, automated PDF booklet generation, instant InstaPay salary exports, and lifetime historical archiving.*
 
