@@ -7,15 +7,15 @@ A straightforward, business-friendly breakdown of monthly operating costs for th
 ## 📌 Executive Summary: "How much will I pay per month (All-Inclusive)?"
 
 The platform runs on an optimized, modern cloud architecture (**Vercel + Neon Database + Cloudflare R2 + Google Firebase + Custom Domain**). 
-There are **no hidden per-user licensing fees**. All estimates below **include hosting, database, storage, push alerts, and the custom domain name**.
+There are **no hidden per-user licensing fees**. All estimates below **include hosting, database, storage, push alerts, custom domain name, and permanent data archiving (old records are NEVER deleted)**.
 
-| Business Scale | Active Staff (Ushers) | Monthly Events | Messages & Reminders | What's Included (Hosting + DB + Domain) | Total All-Inclusive Monthly Cost |
+| Business Scale | Active Staff (Ushers) | Monthly Events | Messages & Reminders | What's Included (Hosting + DB + Domain + Archiving) | Total All-Inclusive Monthly Cost |
 | :--- | :---: | :---: | :---: | :--- | :---: |
-| **🟢 Tier 1: Starter** | Up to **500** Ushers | 5 – 15 Events | Up to 15,000 | • Vercel Hosting ($0)<br>• Neon Database ($0)<br>• Cloudflare R2 Storage ($0)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo) | **~$1 / month**<br>*(Only ~$12 / year total!)* |
-| **🟡 Tier 2: Growth** | Up to **2,000** Ushers | 20 – 50 Events | Up to 60,000 | • Neon Database Pro ($19/mo)<br>• Vercel Hosting Pro ($0–$20/mo)<br>• Cloudflare R2 Storage (~$0.50/mo)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo) | **$21 – $41 / month**<br>*(~1,050 – 2,050 EGP)* |
-| **🔴 Tier 3: Enterprise** | Up to **10,000+** Ushers | 100+ Events | 200,000+ | • Neon Database Scale ($45–$65/mo)<br>• Vercel Hosting Pro ($20–$40/mo)<br>• Cloudflare R2 Storage (~$1–$2/mo)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo) | **$71 – $96 / month**<br>*(~3,550 – 4,800 EGP)* |
+| **🟢 Tier 1: Starter** | Up to **500** Ushers | 5 – 15 Events | Up to 15,000 | • Vercel Hosting ($0)<br>• Neon Database ($0)<br>• Cloudflare R2 Storage ($0)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo)<br>• Lifetime Data Retention ($0) | **~$1 / month**<br>*(Only ~$12 / year total!)* |
+| **🟡 Tier 2: Growth** | Up to **2,000** Ushers | 20 – 50 Events | Up to 60,000 | • Neon Database Pro ($19/mo)<br>• Vercel Hosting Pro ($0–$20/mo)<br>• Cloudflare R2 Storage (~$0.50/mo)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo)<br>• Lifetime Data Retention (Included) | **$21 – $41 / month**<br>*(~1,050 – 2,050 EGP)* |
+| **🔴 Tier 3: Enterprise** | Up to **10,000+** Ushers | 100+ Events | 200,000+ | • Neon Database Scale ($45–$65/mo)<br>• Vercel Hosting Pro ($20–$40/mo)<br>• Cloudflare R2 Storage (~$1–$2/mo)<br>• Firebase Push Alerts ($0)<br>• Custom `.com` Domain (~$1/mo)<br>• Lifetime Data Retention (Included) | **$71 – $96 / month**<br>*(~3,550 – 4,800 EGP)* |
 
-*All tiers include unlimited admin seats, real-time QR check-in, automated PDF booklet generation, and instant InstaPay salary exports.*
+*All tiers include unlimited admin seats, real-time QR check-in, automated PDF booklet generation, instant InstaPay salary exports, and lifetime historical archiving.*
 
 ---
 
@@ -34,7 +34,23 @@ Your custom branded web address (e.g., `agencyname.com` or `insiders-crew.com`):
 
 ---
 
-## 📈 2. Detailed Breakdown by Tier (All Costs Combined)
+## 🗄️ 2. Lifetime Data Archiving: "Old records are NEVER deleted"
+
+The platform is built on an enterprise data preservation model: **no historical records, old events, past attendance logs, or staff photos are ever automatically wiped or deleted**.
+
+* **Historical Event Vault:** Every past event remains permanently browseable with its full roster, supervisor assignments, financial payouts, and operational notes for lifetime auditing.
+* **Staff Lifelong Dossier:** Ratings, badges, past attendance rates, disciplinary strikes, and verification documents are preserved throughout the staff member's entire lifecycle with your agency.
+* **Financial & Audit Trails:** Past salary Excel sheets, check-in timestamps, and InstaPay payout logs remain permanently accessible.
+* **Full-Resolution Media Retention:** Staff profile portraits and National ID scans remain stored at 100% original quality on Cloudflare R2 without degradation, compression loss, or expiration dates.
+
+### 💰 Why permanent archiving won't increase your bill over time:
+1. **Lightweight Database Growth (Neon):** Text records (events, ushers, check-ins) take minimal space. Even after 3 years and hundreds of events, your entire database will only occupy a few hundred megabytes, easily fitting within the Neon Free Tier (500MB) or comfortably within the 10GB Pro tier ($19/mo).
+2. **Pennies-per-Gigabyte Media Storage (Cloudflare R2):** The first 10GB of photo storage is **permanently free**. If your agency accumulates 30GB of historical photos over 2 years, the extra 20GB costs just **$0.30 per month** (less than 15 EGP/month).
+3. **Zero Maintenance Overhead:** You never need to pay an engineer to purge old files or purchase expensive archival licenses.
+
+---
+
+## 📈 3. Detailed Breakdown by Tier (All Costs Combined)
 
 ### 🟢 Tier 1: Starter Tier — **~$1 / month (or $12 / year Total)**
 > **Target:** Startups, growing agencies, or teams managing up to 500 ushers and regular monthly events.
@@ -44,6 +60,7 @@ Your custom branded web address (e.g., `agencyname.com` or `insiders-crew.com`):
 * **Event Volume:** **5 to 15 Events / month**
 * **Push Notifications & Shift Reminders:** Up to **15,000 alerts / month**
 * **Photos & National ID Scans:** Up to 2,000 photos (stored with zero quality degradation)
+* **Data Retention:** **100% Permanent Lifetime Archive** (Never deleted)
 * **All-Inclusive Bill Breakdown:**
   - **Custom Domain Name (`.com`):** **~$1.00 / month** (billed annually at ~$12/year).
   - **Hosting (Vercel):** **$0** (Covered under Vercel Hobby Tier: 100GB bandwidth & 100,000 daily serverless executions).
@@ -64,6 +81,7 @@ Your custom branded web address (e.g., `agencyname.com` or `insiders-crew.com`):
 * **Event Volume:** **20 to 50 Events / month**
 * **Push Notifications & Shift Reminders:** Up to **60,000 alerts / month**
 * **Photos & National ID Scans:** Up to 15,000 photos and documents
+* **Data Retention:** **100% Permanent Lifetime Archive** (Years of past events preserved)
 * **All-Inclusive Bill Breakdown:**
   - **Custom Domain Name (`.com`):** **~$1.00 / month**
   - **Database (Neon PostgreSQL):** **$19 / month** (Upgraded to **Neon Pro** for always-on compute, 10GB storage, and zero sleep latency during heavy traffic).
@@ -84,11 +102,12 @@ Your custom branded web address (e.g., `agencyname.com` or `insiders-crew.com`):
 * **Event Volume:** **100+ Events / month** (Multi-hall conferences, stadiums, multi-day festivals)
 * **Push Notifications & Shift Reminders:** **200,000+ alerts / month**
 * **Photos & National ID Scans:** 50,000+ high-resolution photos and documents
+* **Data Retention:** **100% Permanent Lifetime Archive** (Massive historical operations audit)
 * **All-Inclusive Bill Breakdown:**
   - **Custom Domain Name (`.com`):** **~$1.00 / month**
   - **Database (Neon PostgreSQL):** **$45 – $65 / month** (Neon Scale with auto-scaling compute units for high concurrent check-in traffic).
   - **Hosting (Vercel):** **$20 – $40 / month** (Vercel Pro with dedicated edge network performance).
-  - **Media & Document Storage (Cloudflare R2):** **~$1 – $2 / month** (Dozens of gigabytes of full-res photos).
+  - **Media & Document Storage (Cloudflare R2):** **~$1 – $2 / month** (Dozens of gigabytes of cumulative full-res photos).
   - **Push Notifications (Google Firebase FCM):** **$0** (Always free).
   - **Venue & Map Search (LocationIQ + OpenStreetMap):** **$0** (Included).
   - **Staff Payouts (InstaPay IPN):** **0 EGP** (Direct bank-to-wallet links).
@@ -101,11 +120,14 @@ Your custom branded web address (e.g., `agencyname.com` or `insiders-crew.com`):
 #### Q1: Why is the Starter Tier practically just the domain cost (~$1/mo)?
 > **Answer:** Because the platform was engineered using enterprise-grade cloud providers (**Vercel, Neon, Cloudflare R2, and Google Firebase**) that offer generous permanent free allowances for small-to-medium workloads. Until your agency grows beyond 500 ushers or 15 events a month, these allowances cover 100% of your platform needs, leaving only your custom domain name (~$12/year).
 
-#### Q2: When I need to upgrade, do I have to switch providers or migrate data?
+#### Q2: Will my bill increase dramatically as years pass and old events accumulate?
+> **Answer:** **No.** The platform was architected specifically for permanent data retention. Historical text and event logs take virtually negligible database space, and Cloudflare R2 charges only $0.015/GB/month for any media exceeding the free 10GB threshold. Even with years of accumulated past events and thousands of archived staff profiles, historical storage adds less than $1 to $2 per month to your total bill.
+
+#### Q3: When I need to upgrade, do I have to switch providers or migrate data?
 > **Answer:** **No.** You stay on the exact same providers (**Neon and Vercel**). Upgrading simply means switching the toggle from "Free" to "Pro" inside your Neon or Vercel account dashboard using your credit card. Zero code changes and zero downtime.
 
-#### Q3: How do we send thousands of shift reminder messages for $0?
+#### Q4: How do we send thousands of shift reminder messages for $0?
 > **Answer:** The platform uses **Web & Mobile Push Notifications (via Google Firebase)** instead of traditional SMS. Push notifications are 100% free and delivered directly to the usher's phone screen, saving you thousands of pounds in telecom SMS bundles.
 
-#### Q4: Are there any transaction fees when paying ushers?
+#### Q5: Are there any transaction fees when paying ushers?
 > **Answer:** **0 EGP.** Payouts are made through direct **InstaPay (Egyptian National IPN)** links and automated Excel sheets. You pay directly from your bank or wallet without intermediary gateways (like Paymob or Fawry) taking a 2.75% cut.
