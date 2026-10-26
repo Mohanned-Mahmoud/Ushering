@@ -18,6 +18,7 @@
 ---
 
 ## Table of Contents
+- [📖 Complete Administrator Operations & Technical Run Manual (ADMIN_MANUAL.md)](./ADMIN_MANUAL.md)
 - [Executive Overview](#executive-overview)
 - [The Problem It Solves](#the-problem-it-solves)
 - [System Architecture & Ecosystem](#system-architecture--ecosystem)
